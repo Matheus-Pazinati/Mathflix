@@ -5,6 +5,7 @@
   --text: #fffcf9;
   --bg-button: #e9e6e3;
   --background: linear-gradient(43deg, #102d71 0%, #000000 52%, #c12a23 100%) no-repeat;
+  
 }
 body {
   background: var(--background);
@@ -91,10 +92,50 @@ header {
   font-weight: 600;
   color: #010101;
   font-size: 1rem;
+  cursor: pointer;
 }
 .search__button--image {
   height: 25px;
 }
 .search__message {
   font-size: 14px;
+}
+
+/* ================== RESPONSIVE ================= */
+@media (min-width: 1000px) {
+  .header__title {
+    font-size: 7.5rem;
+  }
+  .message__text {
+    font-size: 2rem;
+  }
+  .movie__container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    text-align: start;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+  .movie__poster {
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .movie__poster img {
+    max-width: none;
+  }
+  .movie__title {
+    font-size: 2.5rem;
+  }
+  .movie__genre {
+    font-size: 1.5rem;
+  }
+  .movie__synopsis {
+    font-size: 1.2rem;
+  }
+  .search__button {
+    font-size: 1.15rem;
+  }
 }
