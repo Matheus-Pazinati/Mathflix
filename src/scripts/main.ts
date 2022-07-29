@@ -1,9 +1,7 @@
-import {
-  API_KEY, BASE_URL,
-  IMG_URL,
-  language,
-} from './api-keys.js';
-import { randomIntFromNumbers } from './random-number.js'
-console.log(API_KEY, IMG_URL, BASE_URL, language)
-console.log(randomIntFromNumbers(5000))
+import { getRandomMovie } from "./get-random-movie.js";
+import { randomIntFromNumbers } from "./get-random-number.js";
 
+const searchMovieButton = document.querySelector('[data-button-search-movie]') as HTMLButtonElement;
+searchMovieButton.addEventListener('click', () => {
+  getRandomMovie(randomIntFromNumbers(1500));
+});
