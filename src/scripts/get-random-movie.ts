@@ -20,6 +20,6 @@ export async function getRandomMovie(id: number) {
       console.log(movie.title)
       return movie;
     } 
-    movie = await getMovie(randomIntFromNumbers(1000));
+    movie = await getMovie(randomIntFromNumbers(id));
   }
 }
