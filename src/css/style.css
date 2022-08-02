@@ -48,6 +48,9 @@ header {
   padding: 0 2rem;
   text-align: center;
 }
+.movie__container.closed {
+  display: none;
+}
 .movie__poster {
   padding: 2rem;
   display: flex;
@@ -103,6 +106,13 @@ header {
 }
 .search__message {
   font-size: 14px;
+}
+.footer__text {
+  padding: 5rem 0 2rem 0;
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  text-shadow: 10px 5px 1px #000;
+  font-size: 1.5rem;
 }
 
 /* ================== RESPONSIVE ================= */
