@@ -1,3 +1,4 @@
+import { IMG_URL } from './api-keys.js'
 type Genre = {
   id: number,
   name: string
@@ -11,5 +12,16 @@ type MovieData = {
 }
 
 export function handleMovieData(movie: MovieData) {
-  console.log(movie.genres[0].name, movie.title, movie.poster_path, movie.overview)
+  const movieContainer = document.querySelector('[data-movie-container]') as HTMLElement;
+  const moviePoster = document.querySelector('[data-movie-poster]') as HTMLImageElement;
+  const movieTitle = document.querySelector('[data-movie-title]') as HTMLElement;
+  const movieGenre = document.querySelector('[data-movie-genre]') as HTMLElement;
+  const movieSynopsis = document.querySelector('[data-movie-synopsis]') as HTMLElement;
+
+  movieContainer.classList.remove('closed');
+
+  moviePoster.src = IMG_URL+movie.poster_path;
+  movieTitle.textContent = movie.title;
+  movieGenre.textContent = movie.genres[0].name;
+  movieSynopsis.textContent = movie.overview;
 }
