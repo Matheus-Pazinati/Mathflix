@@ -24,4 +24,5 @@ export function handleMovieData(movie: MovieData) {
   movieTitle.textContent = movie.title;
   movieGenre.textContent = movie.genres[0].name;
   movieSynopsis.textContent = movie.overview;
+  console.clear()
 }

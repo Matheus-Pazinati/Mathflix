@@ -16,8 +16,6 @@ export async function getRandomMovie(id: number) {
   while (movieNotFound) {
     if (movie.title !== undefined) {
       movieNotFound = false;
-      console.log(movie);
-      console.log(movie.title)
       return movie;
     } 
     movie = await getMovie(randomIntFromNumbers(id));
