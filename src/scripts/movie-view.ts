@@ -21,6 +21,7 @@ export function handleMovieData(movie: MovieData) {
   movieContainer.classList.remove('closed');
 
   moviePoster.src = IMG_URL+movie.poster_path;
+  moviePoster.alt = `Cartaz do filme ${movie.title}`;
   movieTitle.textContent = movie.title;
   movieGenre.textContent = movie.genres[0].name;
   movieSynopsis.textContent = movie.overview;
