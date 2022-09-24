@@ -10,7 +10,7 @@
 <p>Mathflix é um site para ajudar as pessoas a decidirem qual filme assistir. Cada vez que o usuário clica no botão de Encontrar, um filme com algumas informações como gênero e sinopse será mostrado. Atualmente, o site possui mais de 1600 filmes em seu catálogo. Entre no site, prepare a pipoca, e divirta-se: <a href="https://mathflix-matheus-pazinati.vercel.app/">Site Mathflix.</a></p>
 <br>
 <h2>🎯 Objetivo</h2>
-<p>Principal objetivo ao desenvolver o Mathflix foi aplicar na prática os conhecimentos obtidos na "linguagem" Typescript, deixando o código consistente e fácil de dar manutenção. Além disso, pude aprender a como construir o projeto usando a ferramenta Vite, que facilita a crição de projetos, eliminando a necessidade de utilizar os Bundlers para gerenciar frameworks e compiladores, entre outras vantagens.</p>
+<p>Principal objetivo ao desenvolver o Mathflix foi aplicar na prática os conhecimentos obtidos na "linguagem" Typescript, deixando o código consistente e fácil de dar manutenção. Além disso, pude aprender a como construir o projeto usando a ferramenta Vite, que facilita a criação de projetos, eliminando a necessidade de utilizar os Bundlers para gerenciar frameworks e compiladores, entre outras vantagens.</p>
 <br>
 <h2>🚀 Tecnologias e ferramentas utilizadas</h2>
 <ul>
