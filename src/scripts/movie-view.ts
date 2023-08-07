@@ -1,17 +1,7 @@
 import { IMG_URL } from './api-keys.js'
-type Genre = {
-  id: number,
-  name: string
-}
+import { MovieProps } from './get-random-movie.js'
 
-type MovieData = {
-  genres: Genre[],
-  title: string,
-  poster_path: string,
-  overview: string
-}
-
-export function handleMovieData(movie: MovieData) {
+export function handleMovieData(movie: MovieProps) {
   const movieContainer = document.querySelector('[data-movie-container]') as HTMLElement;
   const moviePoster = document.querySelector('[data-movie-poster]') as HTMLImageElement;
   const movieTitle = document.querySelector('[data-movie-title]') as HTMLElement;
@@ -20,10 +10,10 @@ export function handleMovieData(movie: MovieData) {
 
   movieContainer.classList.remove('closed');
 
-  moviePoster.src = IMG_URL+movie.poster_path;
-  moviePoster.alt = `Cartaz do filme ${movie.title}`;
-  movieTitle.textContent = movie.title;
-  movieGenre.textContent = movie.genres[0].name;
-  movieSynopsis.textContent = movie.overview;
+  moviePoster.src = IMG_URL+movie?.poster_path;
+  moviePoster.alt = `Cartaz do filme ${movie?.title}`;
+  movieTitle.textContent = movie?.title;
+  movieGenre.textContent = movie?.genres[0].name;
+  movieSynopsis.textContent = movie?.overview;
   console.clear()
 }

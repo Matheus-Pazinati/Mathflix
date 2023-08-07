@@ -9,6 +9,7 @@
 }
 body {
   background: var(--background);
+  height: 100%;
 }
 * {
   margin: 0;
@@ -49,7 +50,7 @@ header {
   text-align: center;
 }
 .movie__container.closed {
-  display: none;
+  visibility: hidden;
 }
 .movie__poster {
   padding: 2rem;
@@ -129,8 +130,9 @@ header {
     gap: 2rem;
     text-align: start;
     max-width: 900px;
-    margin: 0 auto;
-    padding: 2rem 0;
+    padding: 1rem 0;
+    height: 400px;
+    margin: 0 auto 2rem;
   }
   .movie__poster {
     padding: 0;
@@ -147,7 +149,12 @@ header {
     font-size: 1.5rem;
   }
   .movie__synopsis {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 12;
+    line-clamp: 12;
+    overflow: hidden;
   }
   .search__button {
     font-size: 1.15rem;
